@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonogameGhostManager", "MonogameGhostManager\MonogameGhostManager.csproj", "{6DB2E592-8BCB-472A-AB98-7CA5AED33EF3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShotManager", "..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\ShotManager\ShotManager.csproj", "{D1294335-BAC7-4E3E-924C-0BECF69C98F5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,6 +17,10 @@ Global
 		{6DB2E592-8BCB-472A-AB98-7CA5AED33EF3}.Debug|x86.Build.0 = Debug|x86
 		{6DB2E592-8BCB-472A-AB98-7CA5AED33EF3}.Release|x86.ActiveCfg = Release|x86
 		{6DB2E592-8BCB-472A-AB98-7CA5AED33EF3}.Release|x86.Build.0 = Release|x86
+		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Debug|x86.ActiveCfg = Debug|x86
+		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Debug|x86.Build.0 = Debug|x86
+		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Release|x86.ActiveCfg = Release|x86
+		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
