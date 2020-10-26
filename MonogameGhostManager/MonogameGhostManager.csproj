@@ -42,6 +42,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
+    <Compile Include="Ghost.cs" />
+    <Compile Include="GhostManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -58,6 +60,23 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonogameGhost\MonogameGhost.csproj">
+      <Project>{736db662-f73d-495d-bd78-24de9e4df46f}</Project>
+      <Name>MonogameGhost</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\MonoGameLibrary.csproj">
+      <Project>{aad7c5c6-aa67-45c6-8b7c-22906fa79e9e}</Project>
+      <Name>MonoGameLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\ShotManager\ShotManager.csproj">
+      <Project>{d1294335-bac7-4e3e-924c-0becf69c98f5}</Project>
+      <Name>ShotManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
