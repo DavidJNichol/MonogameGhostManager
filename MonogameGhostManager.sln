@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonogameGhostManager", "Mon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShotManager", "..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\ShotManager\ShotManager.csproj", "{D1294335-BAC7-4E3E-924C-0BECF69C98F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameLibrary", "..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\MonoGameLibrary.csproj", "{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonogameGhost", "..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonogameGhost\MonogameGhost.csproj", "{736DB662-F73D-495D-BD78-24DE9E4DF46F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,6 +25,14 @@ Global
 		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Debug|x86.Build.0 = Debug|x86
 		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Release|x86.ActiveCfg = Release|x86
 		{D1294335-BAC7-4E3E-924C-0BECF69C98F5}.Release|x86.Build.0 = Release|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Debug|x86.ActiveCfg = Debug|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Debug|x86.Build.0 = Debug|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Release|x86.ActiveCfg = Release|x86
+		{AAD7C5C6-AA67-45C6-8B7C-22906FA79E9E}.Release|x86.Build.0 = Release|x86
+		{736DB662-F73D-495D-BD78-24DE9E4DF46F}.Debug|x86.ActiveCfg = Debug|x86
+		{736DB662-F73D-495D-BD78-24DE9E4DF46F}.Debug|x86.Build.0 = Debug|x86
+		{736DB662-F73D-495D-BD78-24DE9E4DF46F}.Release|x86.ActiveCfg = Release|x86
+		{736DB662-F73D-495D-BD78-24DE9E4DF46F}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
