@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using MonogameGhost.Ghost;
+using MonoGameLibrary.Util;
 
 namespace MonogameGhostManager
 {
@@ -12,10 +14,34 @@ namespace MonogameGhostManager
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+
+        InputHandler input;
+        GameConsole console;
+
+        PacMan.MonogamePacMan pac;
+        //Ghost.MonogameGhost redGhost;
+        GhostManager ghostManager;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+            input = new InputHandler(this);
+            console = new GameConsole(this);
+
+            this.Components.Add(input);
+            this.Components.Add(console);
+
+            pac = new PacMan.MonogamePacMan(this);
+            this.Components.Add(pac);
+
+
+
+            ghostManager = new GhostManager(this, pac);
+            this.Components.Add(ghostManager);
+
+
         }
 
         /// <summary>
@@ -26,7 +52,7 @@ namespace MonogameGhostManager
         /// </summary>
         protected override void Initialize()
         {
-            // TODO: Add your initialization logic here
+
 
             base.Initialize();
         }
@@ -40,7 +66,7 @@ namespace MonogameGhostManager
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+
         }
 
         /// <summary>
@@ -49,7 +75,7 @@ namespace MonogameGhostManager
         /// </summary>
         protected override void UnloadContent()
         {
-            // TODO: Unload any non ContentManager content here
+
         }
 
         /// <summary>
@@ -62,7 +88,7 @@ namespace MonogameGhostManager
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // TODO: Add your update logic here
+
 
             base.Update(gameTime);
         }
@@ -75,9 +101,10 @@ namespace MonogameGhostManager
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+
 
             base.Draw(gameTime);
         }
     }
 }
+

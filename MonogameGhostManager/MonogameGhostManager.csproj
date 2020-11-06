@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6DB2E592-8BCB-472A-AB98-7CA5AED33EF3}</ProjectGuid>
+    <ProjectGuid>{16271A95-1662-4C1B-86C6-BB28688A5362}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MonogameGhostManager</RootNamespace>
@@ -42,8 +42,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Game1.cs" />
-    <Compile Include="Ghost.cs" />
-    <Compile Include="GhostManager.cs" />
+    <Compile Include="Ghost\GameConsoleGhost.cs" />
+    <Compile Include="Ghost\Ghost.cs" />
+    <Compile Include="Ghost\GhostManager.cs" />
+    <Compile Include="Ghost\MonogameGhost.cs" />
+    <Compile Include="PacMan\GameConsolePacMan.cs" />
+    <Compile Include="PacMan\MonogamePacMan.cs" />
+    <Compile Include="PacMan\PacMan.cs" />
+    <Compile Include="PlayerController.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -55,6 +61,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\GhostHit.png" />
+    <Content Include="Content\pacmanSingle.png" />
+    <Content Include="Content\PurpleGhost.png" />
+    <Content Include="Content\RedGhost.png" />
+    <Content Include="Content\TealGhost.png" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
@@ -62,21 +73,10 @@
     <None Include="app.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonogameGhost\MonogameGhost.csproj">
-      <Project>{736db662-f73d-495d-bd78-24de9e4df46f}</Project>
-      <Name>MonogameGhost</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\MonoGameLibrary\MonoGameLibrary.csproj">
+    <ProjectReference Include="..\..\..\..\..\source\repos\MonogameGhostManager\MonoGameLibrary\MonoGameLibrary.csproj">
       <Project>{aad7c5c6-aa67-45c6-8b7c-22906fa79e9e}</Project>
       <Name>MonoGameLibrary</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\Desktop\SCHOOL\GP\GameProgramming\jeff\Monogame\Samples\3.5\ShotManager\ShotManager.csproj">
-      <Project>{d1294335-bac7-4e3e-924c-0becf69c98f5}</Project>
-      <Name>ShotManager</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
